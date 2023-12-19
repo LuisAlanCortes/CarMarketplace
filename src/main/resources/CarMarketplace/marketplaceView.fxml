@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CarMarketplace.marketplaceController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="154.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="171.0" text="Car Marketplace">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Accordion prefHeight="312.0" prefWidth="153.0">
+                    <panes>
+                      <TitledPane animated="false" text="Brand">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox fx:id="filterBrandFerrari" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterBrandFerrariChecked" prefHeight="18.0" prefWidth="130.0" text="Ferrari" />
+                                    <CheckBox fx:id="filterBrandMaserati" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#filterBrandMaseratiChecked" prefHeight="18.0" prefWidth="130.0" text="Maserati " />
+                                    <CheckBox fx:id="filterBrandAstonMartin" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#filterBrandAstonMartinChecked" prefHeight="18.0" prefWidth="130.0" text="Aston Martin " />
+                                    <CheckBox fx:id="filterBrandMcLaren" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" onAction="#filterBrandMcLarenChecked" prefHeight="18.0" prefWidth="130.0" text="McLaren " />
+                                    <CheckBox fx:id="filterBrandLamborghini" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" onAction="#filterBrandLamborghiniChecked" prefHeight="18.0" prefWidth="130.0" text="Lamborghini " />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Color">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox fx:id="filterColorBlack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterColorBlackChecked" prefHeight="18.0" prefWidth="130.0" text="Black" />
+                                    <CheckBox fx:id="filterColorBlue" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#filterColorBlueChecked" prefHeight="18.0" prefWidth="130.0" text="Blue" />
+                                    <CheckBox fx:id="filterColorGreen" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#filterColorGreenChecked" prefHeight="18.0" prefWidth="130.0" text="Green" />
+                                    <CheckBox fx:id="filterColorOrange" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" onAction="#filterColorOrangeChecked" prefHeight="18.0" prefWidth="130.0" text="Orange" />
+                                    <CheckBox fx:id="filterColorRed" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" onAction="#filterColorRedChecked" prefHeight="18.0" prefWidth="130.0" text="Red" />
+                                    <CheckBox fx:id="filterColorWhite" layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#filterColorWhiteChecked" prefHeight="18.0" prefWidth="130.0" text="White" />
+                                    <CheckBox fx:id="filterColorYellow" layoutX="14.0" layoutY="187.0" mnemonicParsing="false" onAction="#filterColorYellowChecked" prefHeight="18.0" prefWidth="130.0" text="Yellow" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="292.0" prefWidth="154.0" text="Price">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox fx:id="filterPrice400k" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterPrice400kChecked" prefHeight="18.0" prefWidth="130.0" text="\$400k" />
+                                    <CheckBox fx:id="filterPrice265k" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#filterPrice265kChecked" prefHeight="18.0" prefWidth="130.0" text="\$265k" />
+                                    <CheckBox fx:id="filterPrice200k" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#filterPrice200kChecked" prefHeight="18.0" prefWidth="130.0" text="\$200k " />
+                                    <CheckBox fx:id="filterPrice120k" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" onAction="#filterPrice120kChecked" prefHeight="18.0" prefWidth="130.0" text="\$120k" />
+                                    <CheckBox fx:id="filterPrice100k" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" onAction="#filterPrice100kChecked" prefHeight="18.0" prefWidth="130.0" text="\$100k" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </TitledPane>
+                        <TitledPane animated="false" prefHeight="292.0" prefWidth="154.0" text="Convertible">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox fx:id="filterConvertibleOn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterConvertibleOnChecked" prefHeight="18.0" prefWidth="130.0" text="Convertible" />
+                                    <CheckBox fx:id="filterConvertibleOff" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#filterConvertibleOffChecked" prefHeight="18.0" prefWidth="130.0" text="Non-Convertible" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="447.0">
+                     <children>
+                        <GridPane alignment="CENTER" prefHeight="405.0" prefWidth="439.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fx:id="imageView1" fitHeight="80.0" fitWidth="231.0" onMouseClicked="#image1Clicked" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../cars/Ferrari/BluFerrariConvertible.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView2" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image2Clicked" pickOnBounds="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../../../cars/Maserati/RedMaserati.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView3" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image3Clicked" pickOnBounds="true" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../../../cars/Aston/BlkAstonConvertible.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView4" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image4Clicked" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../../../cars/Mc/OranMcLarConvertible.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView5" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image5Clicked" pickOnBounds="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../../../cars/Lambo/BlkLamboConvertible.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView6" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image6Clicked" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../../../cars/Ferrari/RedFerrari.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView7" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image7Clicked" pickOnBounds="true" GridPane.rowIndex="3">
+                                 <image>
+                                    <Image url="@../../../cars/Maserati/WhiteMaserConvertible.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView8" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image8Clicked" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <image>
+                                    <Image url="@../../../cars/Aston/GreenAston.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView9" fitHeight="80.0" fitWidth="225.0" onMouseClicked="#image9Clicked" pickOnBounds="true" GridPane.rowIndex="4">
+                                 <image>
+                                    <Image url="@../../../cars/Mc/YellowMcLaren.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageView10" fitHeight="80.0" fitWidth="224.0" onMouseClicked="#image10Clicked" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <image>
+                                    <Image url="@../../../cars/Lambo/BlkLambo.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

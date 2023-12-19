@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CarMarketplace.creditCardController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="106.0" prefWidth="456.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Pay Invoice">
+               <font>
+                  <Font name="Calibri Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Line endX="349.0" endY="-7.62939453125E-6" layoutX="107.0" layoutY="106.0" startX="-106.99998474121094" startY="0.39998626708984375" />
+      <HBox alignment="CENTER" layoutY="213.0" prefHeight="106.0" prefWidth="456.0">
+         <children>
+            <TextField fx:id="textFieldCardNum" promptText="Card Number" />
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.5" layoutX="-1.0" layoutY="107.0" prefHeight="106.0" prefWidth="457.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="105.0" prefWidth="182.0">
+               <children>
+                  <TextField fx:id="textFieldFName" layoutX="38.0" layoutY="39.0" promptText="First Name" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="textFieldLName" layoutX="37.0" layoutY="39.0" promptText="Last Name" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5" layoutX="-1.0" layoutY="319.0" prefHeight="106.0" prefWidth="457.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="105.0" prefWidth="182.0">
+               <children>
+                  <TextField fx:id="textFieldMonth" layoutX="38.0" layoutY="39.0" promptText="Month" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="textFieldYear" layoutX="37.0" layoutY="39.0" promptText="Year" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <HBox alignment="CENTER" layoutY="425.0" prefHeight="82.0" prefWidth="456.0">
+         <children>
+            <TextField fx:id="textFieldCSV" promptText="CSV" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="532.0" prefHeight="82.0" prefWidth="456.0">
+         <children>
+            <Button fx:id="buttonSubmit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonSubmitPressed" text="Submit" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="500.0" prefHeight="40.0" prefWidth="458.0">
+         <children>
+            <Label fx:id="labelError" prefHeight="18.0" prefWidth="342.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
